@@ -1,0 +1,176 @@
+ @font-face {
+        font-family: SedgwickAve;
+        src: url(/font/SedgwickAve-Regular.ttf);
+ }
+ 
+body {
+    background-image: url(/img/sfondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    height: 100vh;
+    margin-bottom: 60px;
+    font-family: SedgwickAve;   
+    margin: 0px;
+}
+
+.container {
+background-color: rgba(179, 170, 161, 0.767);
+background-size:contain;
+width: 80%;
+min-height: 200px;
+text-align: center;
+border-radius: 15px;
+padding-block: 20px;
+margin-top: 40px;
+}
+
+h1{
+    font-size: 60px;
+    font-weight: bold;
+    color: rgb(44, 44, 44);
+}
+
+.text-position {
+    text-align: left;
+    overflow-wrap: break-word;
+}
+
+.task-date {
+    float: right;
+    font-family: SedgwickAve;
+}
+
+.task-done {
+    text-decoration: line-through;
+}
+
+.task-text {
+    margin-left: 10px;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.sport {
+    border-left: 5px solid green;
+    background-color: rgba(95, 231, 95, 0.3);
+}
+.work {
+    border-left: 5px solid black;
+    background-color: rgba(95, 95, 95, 0.3);
+}
+.travel {
+    border-left: 5px solid yellow;
+    background-color: rgba(241, 245, 9, 0.3);
+}
+.party {
+    border-left: 5px solid red;
+    background-color: rgba(250, 7, 7, 0.3);
+}
+.learning {
+    border-left: 5px solid blue;
+    background-color: rgba(6, 51, 252, 0.2);
+}
+
+
+
+/*se nel caso si volesse la checkbox bootstrap*/
+input[type=checkbox] {
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  transform: scale(2);
+} 
+
+/*div con il testo*/
+.unconfirmed {
+    padding: 10px;
+    padding-bottom: 30px;
+    background-color: #fafafa;
+    border-left: 6px solid #7f7f84;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+    box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+}
+
+#counter {
+    height: 30px;
+    width: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: auto;
+    padding-bottom: auto;
+    border: 1px solid black;
+}
+
+/*button*/
+.bin {
+    float:right;
+    border: none;
+    color: red;
+    background-color: #fafafa00;
+    cursor: pointer;
+    }
+
+.edit {
+    float:left;
+    border: none;
+    color: rgb(58, 12, 12);
+    background-color: #fafafa00;
+    cursor: pointer;
+}
+
+/* .unconfirmed, .unconfirmed.task-date {
+    color: gray;
+}
+
+.error, .error.task-date {
+    color: red;
+} */
+
+@media (max-width: 575.98px) { 
+    
+    h1 {
+        font-size:xxx-large;
+    }
+    .container {
+        width: 100%;
+        min-height: 200px;
+    }
+    .task-text {
+        font-size: 25px;
+    }
+    .task-date {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 375.98px) { 
+    
+    h1 {
+        font-size: 30px;
+    }
+    .container {
+        width: 100%;
+        min-height: 50px;
+    }
+    .task-text {
+        margin-left: 10px;
+        font-size: 15px;
+    }    
+    .task-date {
+        font-size: 11px;
+    }
+    /*se nel caso si volesse la checkbox bootstrap*/
+   input[type=checkbox] {
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(1); /* IE */
+  -moz-transform: scale(1); /* FF */
+  -webkit-transform: scale(1); /* Safari and Chrome */
+  -o-transform: scale(1); /* Opera */
+  transform: scale(1);
+    }
+}
